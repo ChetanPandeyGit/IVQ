@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interview Questions</title>
+    <style>
+        *{
+            font-family: poppins,'Times New Roman', Times, serif;
+            background: linear-gradient(rgb(121, 66, 66),white);
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 90vw;
+            margin: auto;
+        }
+        span{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS INTERVIEW QUESTIONS</h1>
+    <h2>Day 1</h2>
+    <div class="container">     
+        <h4>Q1. Difference between flex direction as row and column. </h4>  <br><br>
+
+      Ans. These are only values for flex-direction, which is sub property used in flex layout. Basically Flex works one-dimensionally which means child elments can be either arranged horizontally or vertically. <br>
+
+       flex-direction as row means child elements are going to be arranged one after another in row manner/ horizontally, where x-axis is considerd as main axis. <br>
+
+       flex-direction as column means child elements are going to be arranged one after another in column manner/ vertically, where y-axis is considerd as main axis.<br><br>
+
+       <h4>Q2. Explain inline , internal and external stylesheet. </h4>  <br><br>
+
+       Ans.  Inline Styling : It can be applied by the use of style attribute directly on particular element. It is having the highest priority amongst three styling types. <br>
+
+       Internal Styling : It is also known as "Embedded Styling". It can be applied by using style tag in head section of the same HTML file, therefore can only put in effect for paticular HTML file only. <br>
+
+       External Styling : It is the least prioritized but most preferable styling type. It can be applied by using link tag in head section to attach external .css file (where all the styling is done). CSS file can be linked to as many HTML files where same styling is needed. <br><br>
+
+       <h4>Q3. Justify-content allows you to do what? </h4> <br><br>
+
+       Ans. Justify-content is used to specify that how child-items are going to be distributed inside parent flex container. It can be defined by the help of 6 values : <br>
+       left <br>
+       right <br>
+       center <br>
+       space-around <br>
+       space-between <br>
+       space-evenly <br><br>
+
+       <h4>Q4. Difference between absolute and relative positioning. </h4> <br><br>
+
+       Ans. Relative positioning is used when we have to place that element according to its current position without changing layout, with the help of basic four offsets (top,right,bottom,left). <br>
+       
+       Absolute positioning is used when we have to place that element according to its parent container totally changing layout, with help of offsets . Body act as parent container if no other container is having position as relative. <br><br>
+
+       <h4>Q5. What is grid-template-columns used for? </h4> <br><br>
+
+       Ans. Grid-template-columns property is used to define the number and width of columns for that particular grid container. <br><br>
+
+       <h4>Q6. What is the z-index in CSS? </h4>  <br><br>
+
+       Ans. Z-index property determines the stack level of HTML element with respect to z-axis, which means the element having higher value as z-index will be placed on the top of the element having lower value. However , It only works if element`s position propert is set to relative, absolute or fixed. <br><br>
+
+       <h4>Q7. What is the difference between padding and margin? </h4>  <br><br>
+         
+       Ans. Padding provides the space between the content and border of particular element, inside of border. <br>
+       
+       Margin provides the space between the border and nearest element, outside of the border.<br><br>
+    </div>
+</body>
+</html>
+
