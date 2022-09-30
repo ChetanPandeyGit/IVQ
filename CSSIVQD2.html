@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interview Questions</title>
+    <style>
+        *{
+            font-family: poppins,'Times New Roman', Times, serif;
+            background: linear-gradient(rgb(121, 66, 66),white);
+        }
+        h1{
+            text-align: center;
+        }
+        .container{
+            width: 90vw;
+            margin: auto;
+            padding-bottom: 30px;
+        }
+        span{
+            color: white;
+        }
+        button{
+            padding: 5px 15px;
+            border: 4px solid rgb(251, 32, 141);
+            border-radius: 15px;
+            font-weight: bold;
+        }
+        .login{
+            background: white;
+            color: rgb(251, 32, 141) ;
+            margin-right: 50px;
+        }
+        .sign-up{
+            color : white;
+            background: rgb(251, 32, 141) ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS INTERVIEW QUESTIONS</h1>
+    <h2>Day 2</h2>
+    <div class="container">     
+        <h4>Q1. What is box sizing? </h4>  <br>
+
+      Ans. Box-sizing property defines how the width and height gets applied on an element. <br>
+      The default value of box-sizing is content-box, where the actual width of the box will be equal to the border and padding and width of the box . <br>
+      When box-sizing is set to be border-box, then the actual width will be equal to the width of the box itself, means if we will increase the padding or border of the box then it will not increase the width of the box.
+      <br><br>
+
+       <h4>Q2. What is animation delay? </h4>  <br>
+
+       Ans.  It is a sub-property of CSS animation. It defines how long the animation has to wait before starting. Using the animation-delay property, you define the delay by specifying the number of seconds or milliseconds it should take before playing. <br><br>
+
+       <h4>Q3. Which property you will use to merge cells vertically in grid? </h4> <br>
+
+       Ans. grid-column-start and grid-column-end property can be used to merge cells vertically. It also has a shorthand i.e., grid-column: start/end. <br><br>
+
+       <h4>Q4.Which property you will use to merge cells horizontally in grid? </h4> <br>
+
+       Ans.  grid-rows-start and grid-row-end property can be used to merge cells horizontally. It also has a shorthand i.e., grid-row: start/end. <br><br>
+
+       <h4>Q5. what is the difference between display none and visibility hidden? </h4> <br>
+
+       Ans. Display: none; property is used to hide elements without deleting them. It does not take up any space, which allows other elements to fill in.   <br>
+       Visibility: hidden; property also hides an element, but affects the layout i.e., it takes up the space. <br><br>
+
+
+       <h4>Q6. Replicate the button on Masthead of PrepBytes. </h4>  <br>
+
+       Ans. <br><br>
+
+            <button class="login">Login</button>
+            <button class="sign-up">Signup</button>
+
+       
+    </div>
+</body>
+</html>
+
