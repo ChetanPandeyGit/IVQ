@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Interview Questions</title>
+    <style>
+        *{
+            font-family: poppins,'Times New Roman', Times, serif;
+        }
+        h1{
+            text-align: center;
+            background: linear-gradient(rgb(121, 66, 66),white);
+        }
+        h4{
+            background: linear-gradient(rgb(121, 66, 66),white);
+        }
+        .container{
+            width: 90vw;
+            margin: auto;
+            padding-bottom: 30px;
+        }
+        span{
+            color: white;
+        }
+        button{
+            padding: 5px 15px;
+            border: 4px solid rgb(251, 32, 141);
+            border-radius: 15px;
+            font-weight: bold;
+        }
+        button:hover{
+            color: black;
+        }
+        .login{
+            background: white;
+            color: rgb(251, 32, 141) ;
+            margin-right: 20px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+        .sign-up{
+            color : white;
+            margin-right: 50px;
+            background: rgb(251, 32, 141) ;
+            cursor: pointer;
+        }
+        .nav-bar {
+            height: 13vh;
+            width: 100%;
+            background:rgb(231, 230, 230);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .logo img{
+            margin-left: 20px;
+            margin-right: 100px;
+        }
+        .masterhead{
+            background: url(https://img.freepik.com/free-photo/beautiful-milky-way-night-sky_53876-139825.jpg?w=900&t=st=1665062344~exp=1665062944~hmac=a3b2648114c2a02848f55096e2b8a98fd620e883306c7b8c5d49b6e77e34c931);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100px;
+            text-align: center;
+            color: white;
+        }
+        .views{
+            display: flex;
+              }
+              @media (max-width:480px)
+              {
+                .views{
+                    flex-direction: column;
+                }
+              }
+        .card{
+            width: 200px;
+            height: 200px;
+            background: steelblue;
+            margin: 10px;
+            color: aqua;            
+        }
+        .p-btn{
+            margin-left: 50px;
+        }
+        @media (max-width:480px){
+            .p-btn{
+                background: hotpink;
+                color: blue;
+            }
+        }
+        @media (max-width:720px) and (min-width:480px) {
+            .p-btn{
+                background: yellowgreen;
+                color: red;
+            }
+        }
+        .flexbox{
+            display: flex;
+            justify-content: space-around;
+            background: aquamarine;
+            height: 200px;
+
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background: rgb(50, 36, 151);
+            color: white;
+        }
+        #item-1{
+            flex-basis: 200px;
+        }
+       #item-2{
+        align-self: flex-end;
+       }
+       #item-3{
+        flex: 0 2 175px;
+       }
+    </style>
+</head>
+<body>    
+    <h1>CSS INTERVIEW QUESTIONS</h1>
+    <h2>Day 4</h2>
+    <div class="container">     
+        <h4>Q1. Create masterhead - add background image and put a text at the center , with button below it. </h4>  <br>
+
+      Ans.  <div class="masterhead">
+        <h5>Random Text Here</h5><br>
+        <button class="btn1">Button</button>
+      </div>
+            
+      <br><br>
+
+       <h4>Q2. Create header -- left side will have logo and right side will have 4 button. </h4>  <br>
+
+       Ans.  <div class="nav-bar">
+        <div class="logo"><img src="./logoPrepBytes.svg" alt=""></div>
+        <div class="links">
+            <a href="#">Study Material</a>
+            <a href="#">Courses</a>
+            <a href="#">Practice Coding</a>
+            <a href="#">Elevation Academy</a>
+        </div>
+        <div class="btn">
+            <button class="login">Login</button>
+            <button class="sign-up">Signup</button>
+        </div>
+    </div> <br><br>
+
+       <h4>Q3. Create 3 cards of height & width 200 px with texts in it , the card should be horizontally placed in web view and vertically in mobile view. </h4> <br>
+
+       Ans. <div class="views">
+        <div class="card">Text</div>
+        <div class="card">Text</div>
+        <div class="card">Text</div>
+       </div> <br><br>
+
+       <h4>Q4. Replicate the button on Masthead of PrepBytes, Change the background color of button for mobile view and ipad. </h4> <br>
+
+       Ans. <button class="p-btn">Prepbytes</button> <br><br>
+
+       <h4>Q5. Write code to show implementation of flex. </h4> <br>
+
+       Ans. <div class="flexbox">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+    </div>
+ <br><br>
+    </div>
+</body>
+</html>
+
